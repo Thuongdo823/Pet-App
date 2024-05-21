@@ -5,11 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".Register"
     android:orientation="vertical">
-<!--    nút quay lại-->
     <ImageView
-        android:id="@+id/arrow"
+        android:id="@+id/arrow1"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/arrow"
@@ -18,14 +17,14 @@
         app:tint="#198A1E" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:gravity="center"
         >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="LOGIN"
+            android:text="SIGN UP"
             android:gravity="center"
             android:textColor="#1A911F"
             android:textSize="40sp" />
@@ -37,23 +36,26 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/login"/>
+            android:src="@drawable/signup"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/bg_edittext"
-            android:hint="Username or email"
+            android:hint="Email"
             android:paddingLeft="20dp"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"/>
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -65,23 +67,16 @@
             android:paddingLeft="20dp"
             android:textSize="18dp"
             android:layout_marginTop="20dp"
-            android:inputType="textPassword"
-            />
-        <TextView
-            android:id="@+id/forgotpass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Forgot your password?"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="25dp"
-            />
+            android:inputType="textPassword"/>
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnSignup1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
@@ -89,14 +84,11 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/btn_signup1"
                 style="@android:style/Widget.Button"
-                android:text="Log in"
+                android:text="Sign up"
                 android:textSize="25sp"
-                tools:ignore="InvalidId"
                 android:textColor="#fff"
                 android:textStyle="bold"/>
         </RelativeLayout>
     </LinearLayout>
-
-
 
 </LinearLayout>
